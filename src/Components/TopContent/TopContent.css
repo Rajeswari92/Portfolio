@@ -1,0 +1,42 @@
+.topcontent {
+  color: white;
+  position: relative;
+}
+.topcontent_container {
+  position: absolute;
+  top: 300px;
+  right: 150px;
+}
+.topcontent_container > p {
+  letter-spacing: 1px;
+  text-align: left;
+  padding-left: 3px;
+  padding-top: 20px;
+}
+.topcontent_container > a > button {
+  margin-bottom: 30px;
+  text-align: left;
+  margin-left: 5px;
+  border-radius: 2px;
+  margin-top: 30px;
+}
+.topcontent_container > h1 {
+  font-size: 50px;
+}
+.topcontent_work {
+  color: black;
+  border: 4px solid rebeccapurple !important;
+  background-color: red;
+  border-radius: 50px !important;
+  font-size: 14px;
+  padding: 9px 45px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 2000px rgba(205, 9, 219, 0.433);
+}
+.topcontent_work:hover {
+  color: white;
+  background-color: transparent;
+  border: 2px solid white !important;
+  font-weight: 700;
+}

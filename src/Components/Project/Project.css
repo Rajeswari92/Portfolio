@@ -1,0 +1,35 @@
+.project > img {
+  width: 350px;
+  height: 179px;
+}
+
+.project {
+  transition: transform 100ms ease-in;
+  margin: 15px;
+}
+
+.project:hover {
+  color: white;
+  background-color: black;
+  width: 350px;
+  height: 179px;
+  transform: scale(1.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.project_content > h4 {
+  padding-bottom: 15px;
+  color: rgb(226, 43, 189);
+}
+.project_content > p {
+  font-size: 15px;
+}
+.project_content {
+  padding: 10px;
+}
+.project_content > p > b {
+  color: yellow;
+}

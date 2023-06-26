@@ -1,0 +1,23 @@
+.projectContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(blue, skyblue);
+}
+.protitle {
+  color: rgb(18, 18, 19);
+  padding-bottom: 50px;
+  text-shadow: 1px 1px rgb(149, 255, 0);
+  text-align: center;
+  font-size: 48px;
+}
+.projectContainer_projects {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60vw;
+  margin-top: 50px;
+  justify-content: space-around;
+}
