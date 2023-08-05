@@ -4,8 +4,9 @@
   margin: 0;
 }
 .home {
-  background: linear-gradient(purple, white, violet, brown, violet);
+  background: url("../../assets/click.jpg");
   height: 100vh;
+  background-size: cover;
 }
 .heading {
   padding-top: 150px;
@@ -14,6 +15,9 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+  color: aliceblue;
+  text-shadow: 2px 2px green;
+  background-repeat: no-repeat;
 }
 .btn {
   margin-left: 50%;
@@ -31,4 +35,64 @@
 }
 .btn > a {
   color: white;
+}
+
+@media (max-width: 480px) {
+  .heading {
+    padding-top: 150px;
+    font-family: "Rubik Moonrocks", cursive;
+    font-size: 35px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: aliceblue;
+    text-shadow: 2px 2px green;
+    background-repeat: no-repeat;
+  }
+  .btn {
+    align-items: center;
+    height: 43px;
+    width: 200px;
+    text-align: center;
+    font-size: 35px;
+    padding: 1px 3px;
+    margin-left: 110px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .heading {
+    padding-top: 150px;
+    font-size: 43px;
+  }
+  .btn {
+    margin-left: 100px;
+    margin-top: 150px;
+    font-size: 40px;
+    text-align: center;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  .heading {
+    padding-top: 150px;
+    font-size: 60px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: aliceblue;
+    text-shadow: 2px 2px green;
+    background-repeat: no-repeat;
+  }
+  .btn {
+    margin-left: 50%;
+    margin-top: 150px;
+    font-size: 50px;
+    text-align: center;
+    padding: 25px 50px;
+    border: none;
+    border-radius: 25px;
+  }
 }

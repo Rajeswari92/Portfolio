@@ -1,29 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
+import { BiMenu } from "react-icons/bi";
+import { IoClose } from "react-icons/io5";
 const Navbar = () => {
+  const [isMobile, setIsMobile] = useState(false);
   return (
-    <div className="header">
-      <div className="header_left">
-        <h1>
-          Develop<span>er</span>
-        </h1>
-      </div>
-      <div className="header_right">
-        <Link to="aboutme" smooth={true} duration={500}>
-          <h4>About Me</h4>
+    <nav className="navbar">
+      <h3 className="logo">Developer</h3>
+      <ul
+        className={isMobile ? "nav-links-mobile" : "nav-links"}
+        onClick={() => setIsMobile(false)}
+      >
+        <Link to="aboutme" className="nav-about">
+          <li>About Me</li>
         </Link>
-        <Link to="skills" smooth={true} duration={500}>
-          <h4>Skills</h4>
+        <Link to="skills" className="nav-skill">
+          <li>Education & Skills</li>
         </Link>
-        <Link to="projects" smooth={true} duration={500}>
-          <h4>Projects</h4>
+        <Link to="projects" className="nav-project">
+          <li>Projects</li>
         </Link>
-        <Link to="contact" smooth={true} duration={500}>
-          <h4>Contact</h4>
+        <Link to="contact" className="nav-contact">
+          <li>Contact</li>
         </Link>
-      </div>
-    </div>
+      </ul>
+      <button
+        className="mobile-menu-icon"
+        onClick={() => setIsMobile(!isMobile)}
+      >
+        {isMobile ? <IoClose /> : <BiMenu />}
+      </button>
+    </nav>
   );
 };
 

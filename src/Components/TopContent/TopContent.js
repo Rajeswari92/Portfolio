@@ -8,13 +8,8 @@ const TopContent = () => {
       <div className="topcontent_container">
         <h1>Ms.Rajeswari Narayanan</h1>
         <p>
-          Creative and Detail-oriented Frontend Developer | Fresh Graduate with
-          Proficiency in HTML, CSS, Javascript, React js and DSA
+          Creative and Detail-oriented Full Stack Developer | Fresh Graduate
         </p>
-
-        <a href="">
-          <button className="topcontent_work">Download CV</button>
-        </a>
         <Link to="projects" smooth={true} duration={500}>
           <button className="topcontent_work">My Work</button>
         </Link>
